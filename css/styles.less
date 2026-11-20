@@ -1,0 +1,63 @@
+//IMPORTS DE FUENTES
+@font-face {
+    font-family: Outfit;
+    src: url(../img/fonts/Outfit-VariableFont_wght.ttf);
+
+}
+//DEFINIENDO VARIABLES
+@bgcolor: #D5E1EF;
+@font-family: 'Outfit',sans-serif;
+@title-size: 21px;
+@title-color: #1B2A44;
+@description-size: 14px;
+@description-color: #666;
+
+//ESTILOS GENERALES
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: @font-family;
+}
+
+//ESTILOS DEL CUERPO
+body{
+    background-color: @bgcolor;
+    //ESTILOS DEL CONTENEDOR PRINCIPAL
+    #container{    
+        background-color: white;
+        width: 320px;
+        border-radius: 20px;
+        margin: 20vh auto;
+        text-align: center;
+        box-shadow: 0px 3px 5px #ccc;
+
+        //ESTILOS DE LA IMAGEN DEL QR
+        #qr-imgage{
+            width: 290px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        //ESTILOS DEL ENCABEZADO
+        #title{
+            font-size: @title-size;
+            padding: 20px;
+            padding-bottom: 15px;
+            width: 75%;
+            margin: 0 auto;
+            color: @title-color;
+        }
+
+        //ESTILOS DE LA DESCRIPCIÓN
+        #description{
+            font-size: @description-size;
+            color: @description-color;
+            padding-bottom: 35px;
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+}
+
